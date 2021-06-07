@@ -1,5 +1,5 @@
 import React from 'react'
-import phoneImg from './images/images/jujux.jpg'
+import phoneImg from './images/jujux.jpg'
 import {useGlobalContext} from './context'
 const Hero = () => {
   const {closeSubmenu}= useGlobalContext();

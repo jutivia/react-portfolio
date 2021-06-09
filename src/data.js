@@ -1,4 +1,4 @@
-import { FaCreditCard, FaBook, FaBriefcase, FaTwitter, FaGithub, FaLinkedin, FaReact, FaCss3,  } from 'react-icons/fa';
+import { FaCreditCard, FaTwitter, FaGithub, FaLinkedin, FaReact, FaCss3,  } from 'react-icons/fa';
 import { SiGmail , SiJavascript, SiJquery} from 'react-icons/si';
 import React from 'react';
 const sublinks = [

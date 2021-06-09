@@ -2,6 +2,7 @@ import React from 'react'
 import { FaTimes } from 'react-icons/fa'
 import sublinks from './data'
 import {useGlobalContext} from './context'
+import { Link } from 'react-router-dom';
 
 const Sidebar = () => {
   const {closeSidebar, isSidebarOpen}= useGlobalContext();
@@ -14,11 +15,11 @@ const Sidebar = () => {
   {sublinks.map((item,index)=>{
      const {links, page}= item;
      return(<article key={index}>
-       <h4>{page}</h4>
+     <Link to={`/${page}`} onClick={closeSidebar}>  <h4>{page}</h4></Link>
        <div className='sidebar-sublinks'>
          {links.map((link,index)=>{
            const {url, icon, label}= link
-            return <a key={index} href={url}>
+            return <a key={index} href={url} onClick={closeSidebar}>
               {icon}
             {label}</a>
        

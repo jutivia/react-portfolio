@@ -6,24 +6,31 @@ import App from './App'
 import Home from './Home'
 import About from './About'
 import Projects from './Projects'
+import Contact from './Contact'
+import Error from './Error'
 
 const IndexedApp = () => {
     return (
         <Router>
             <Switch>
-            <Route>
+            <Route  path='/Home'>
                 <App/>
             </Route>
-             <Route>
+             <Route exact path='/'>
                 <Home/>
             </Route>
-             <Route>
+             <Route path='/About'>
                 <About/>
             </Route>
-             <Route>
+             <Route path='/Projects'>
                 <Projects/>
             </Route>
-
+             <Route path='/Contact'>
+                <Contact/>
+            </Route>
+             <Route path='*'>
+                <Error/>
+            </Route>
             </Switch>
     
     

@@ -5,17 +5,15 @@ import Sidebar from './Sidebar'
 import Submenu from './Submenu'
 import Footer from './Footer'
 
-const About = () => {
-    
-    return (<>
-     <Navbar/>
+const Contact =()=>{
+    return <>
+    <Navbar/>
      <Sidebar/>
-     
+
      <Submenu/>
      <Footer/>
-</>
-    )
+    
+    </>
 }
 
-
-export default About
+export default Contact

@@ -2,8 +2,8 @@ import React from 'react'
 import logo from './images/logo.svg'
 import { FaBars } from 'react-icons/fa'
 import {useGlobalContext} from './context'
+import { Link } from 'react-router-dom';
 
-  
 const Navbar = () => {
   const {openSidebar, openSubmenu,closeSubmenu}= useGlobalContext();
 
@@ -22,28 +22,28 @@ const Navbar = () => {
   return <nav className='nav' onMouseOver={handleSubmenu}>
     <div className='nav-center'>
     <div className='nav-header'>
-     <h2 className='add-name-css'>I am Jumoke</h2>
+    <Link to='/'><h2 className='add-name-css'>I am Jumoke</h2></Link> 
      <button  className='btn toggle-btn'onClick={openSidebar}><FaBars/></button>    
  </div>
       <ul className='nav-links'>
-        <li>
+       <Link to='/About'> <li>
           <button className='link-btn' onMouseOver={displaySubmenu}>
             About
           </button>
-          </li>
-          <li>
+          </li></Link>
+         <Link to='/Projects'> <li>
           <button className='link-btn' onMouseOver={displaySubmenu}>
             Projects
           </button>
-          </li>
-          <li>
+          </li></Link>
+         <Link to='/Contact'> <li>
           <button className='link-btn' onMouseOver={displaySubmenu}>
             Contact
           </button>
-        </li>
+        </li></Link>
 
       </ul>
-      <button className='btn signin-btn'>Get in Touch </button>
+     <Link to='/Contact'> <button className='btn signin-btn'>Get in Touch </button></Link>
     </div>
   </nav>
 }

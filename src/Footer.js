@@ -1,7 +1,7 @@
 import React from 'react'
 import sublinks from './data'
 
-const linked= sublinks.find((item)=>{item.page==='Contact'})
+const linked= sublinks.find((item)=>{ return item.page =='Contact'})
 const Footer = () => {
     const {links}= linked;
     return (<div className='footer-links'>
@@ -10,8 +10,7 @@ const Footer = () => {
          return(<article key={index}>
         <div className='footer-sublinks'>
          <a key={index} href={url}>
-              {icon}
-        {label}</a>
+              {icon}</a>
        </div>
          </article>)
   })

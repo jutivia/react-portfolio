@@ -5,7 +5,6 @@ const Submenu = () => {
     isSubmenuOpen,
     location, 
     page:{page, links},
-    closeSubmenu
   }= useGlobalContext();
   const container= useRef(null)
   const [columns, setColumns]= useState('col-2')

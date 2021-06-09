@@ -1,6 +1,6 @@
 import React from 'react'
 import logo from './images/logo.svg'
-import { FaBars } from 'react-icons/fa'
+import { FaBars, FaHome } from 'react-icons/fa'
 import {useGlobalContext} from './context'
 import { Link } from 'react-router-dom';
 
@@ -22,8 +22,8 @@ const Navbar = () => {
   return <nav className='nav' onMouseOver={handleSubmenu}>
     <div className='nav-center'>
     <div className='nav-header'>
-    <Link to='/'><h2 className='add-name-css'>I am Jumoke</h2></Link> 
-     <button  className='btn toggle-btn'onClick={openSidebar}><FaBars/></button>    
+    <Link to='/'><button className='btn toggle-btn2'><FaHome/></button></Link> 
+     <button  className='btn toggle-btn toggle-btn2'onClick={openSidebar}><FaBars/></button>    
  </div>
       <ul className='nav-links'>
        <Link to='/About'> <li>

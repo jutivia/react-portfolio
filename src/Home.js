@@ -35,8 +35,8 @@ useEffect(()=>{
         I design user interfaces
         <Typist.Backspace count={22} delay={300}/>
         <Typist.Delay ms={600} />
-        build and design responsive we
-        <Typist.Backspace count={32} delay={400}/>
+        build and design responsive web
+        <Typist.Backspace count={33} delay={400}/>
         <Typist.Delay ms={700} />
         Front-End Developer.
         </h1>

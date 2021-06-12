@@ -1,85 +1,65 @@
 import React, {useEffect, useState} from 'react'
 import { Link } from 'react-router-dom';
-import { slideInLeft, fadeIn, zoomIn } from 'react-animations'
-import Radium, {StyleRoot} from 'radium';
-import juju from './images/cropped juju.jpg';
+import Typist from 'react-typist'
 
-const Home = () => {
-const [s2, setS2] = useState(false);
-const [s3, setS3] = useState(false);
-const [s4, setS4] = useState(false);
-const [s5, setS5] = useState(false);
-const [s6, setS6] = useState(false);
-  const styles = {
-  slideInLeft1: {
-    animationDuration: '1s',
-    animationName: Radium.keyframes( slideInLeft,'slideInleft'),
-    
-    
-  },
-  slideInLeft2: {
-    
-    animationDuration: '1s',
-    animationName: Radium.keyframes( slideInLeft, 'slideInLeft'),
-    
-  
-    
-  },
-  slideInLeft3: {
-    animationDuration: '1s',
-    animationName: Radium.keyframes( slideInLeft, 'slideInLeft'),
-    
-  },
-   slideInLeft4: {
-    animationDuration: '1s',
-    animationName: Radium.keyframes( slideInLeft, 'slideInLeft'),
-    
-  },
-  fadeIn: {
-    animation: 'x 2s',
-    animationName: Radium.keyframes(fadeIn, 'fadeIn'),
-  },
-  zoomIn: {
-    animation: 'x 1.5s',
-    animationName: Radium.keyframes(zoomIn, 'zoomIn'),
-  },
-  
-}
-
+const Home = () =>{
+const [s2, setS2] =useState(false);
 useEffect(()=>{
-setTimeout(()=>{
-  setS2(true)
-},1000)
-
-setTimeout(()=>{
-  setS3(true)
-},2000)
-
-setTimeout(()=>{
-  setS4(true)
-},3000)
-setTimeout(()=>{
-  setS5(true)
-},3500)
-setTimeout(()=>{
-  setS6(true)
-},5500)
-
-
-},[])
-    return (<StyleRoot>
-    <div className='home-body' style={styles.fadeIn}>
+  setTimeout(()=>{
+    setS2(true)
+  },21550)
+})
+    return ( <div className='home-body'>
       <Link to='/Home'>
+      
         <div className='frontPage'>
          <div className='home-name' >
-           <h2 style={styles.slideInLeft1}>Hi, </h2>
-     {s2 &&  <h1 style={styles.slideInLeft2}> I'm Jumoke.</h1> }
-      {s3 && <h1 style={styles.slideInLeft3}>I design and build </h1>}
-     {s4 &&  <h1 style={styles.slideInLeft4}>user interfaces</h1>}
+           <Typist avgTypingDelay={80} cursor={{show:false}}>
+          <span><span style={{color:'grey'}}>&#60;</span>body<span style={{color:'grey'}}>&#62;</span></span></Typist>
+         <br/>
+         <br/> 
+          <br/>
+         <br/>
+         <br/>
+         <Typist avgTypingDelay={80} cursor={{show:false}} >
+           <Typist.Delay ms={1500} />
+         <span style={{marginLeft:'2.5rem'}}><span style={{color:'grey'}}>&#60;</span>h1<span style={{color:'grey'}}>&#62;</span></span>
+         </Typist>
+          <br/>
+          <Typist cursor={{show:false}} avgTypingDelay={80} >
+         <Typist.Delay ms={3600} />
+      <h1 >Hi,<br/> 
+      <Typist.Delay ms={600} />    
+     I'm Ju&#768;mo&#768;ke&#769;<br/>
+      <Typist.Delay ms={500} />
+        I design user interfaces
+        <Typist.Backspace count={22} delay={300}/>
+        <Typist.Delay ms={600} />
+        build and design responsive we
+        <Typist.Backspace count={32} delay={400}/>
+        <Typist.Delay ms={700} />
+        Front-End Developer.
+        </h1>
+         <br/>
+         <br/>
+         </Typist>
+         <Typist cursor={{show:false}} avgTypingDelay={80} >
+           <Typist.Delay ms={2250}/>
+         <span style={{marginLeft:'2.5rem'}}><span style={{color:'grey'}}>&#60;/</span>h1<span style={{color:'grey'}}>&#62;</span></span></Typist>
+         <br/>
+         <br/>
+         <br/>
+         <br/>
+         <br/>
+      
+         <Typist cursor={{show:false}} avgTypingDelay={80} >
+           <Typist.Delay ms={900}/>
+          <span><span style={{color:'grey'}}>&#60;/</span>body<span style={{color:'grey'}}>&#62;</span></span>
+         </Typist>
        </div>
-      {s5 && <img src={juju} alt='juju' className='home-picture' style={styles.fadeIn} />}
        </div>
-    {s6 && <div className='stage'>  
+       
+    {s2 && <div className='stage'>  
       <div className='tap-link box'>
         <p >Tap anywhere to continue </p>
         </div>
@@ -87,7 +67,7 @@ setTimeout(()=>{
         
         </Link>
     </div>
-    </StyleRoot>)
+    )
 }
 
-export default Home
+export default Home  

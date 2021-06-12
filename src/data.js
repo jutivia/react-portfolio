@@ -1,21 +1,21 @@
-import { FaCreditCard, FaTwitter, FaGithub, FaLinkedin, FaReact, FaCss3,  } from 'react-icons/fa';
+import {  FaTwitter, FaGithub, FaLinkedin, FaReact, FaCss3,  } from 'react-icons/fa';
 import { SiGmail , SiJavascript, SiJquery} from 'react-icons/si';
 import React from 'react';
 const sublinks = [
   {
     page: 'About',
     links: [
-      { label: 'payment', icon: <FaCreditCard />, url: '/products' },
-      { label: 'terminal', icon: <FaCreditCard />, url: '/products' },
-      { label: 'connect', icon: <FaCreditCard />, url: '/products' },
+      { label:'' , icon: '', url: '' },
+      { label: '', icon: '' , url: '' },
+      { label: '', icon: '', url: '' },
     ],
   },
   {
     page: 'Projects',
     links: [
-      { label: 'React.js', icon: <FaReact />, url: '/products' },
-      { label: 'Plain Javascript.js', icon: <SiJavascript />, url: '/products' },
-       { label: 'Jquery', icon: <SiJquery/>, url: '/products' },
+      { label: 'React.js', icon: <FaReact />, url: '' },
+      { label: 'Plain Javascript.js', icon: <SiJavascript />, url: '' },
+       { label: 'Jquery', icon: <SiJquery/>, url: '' },
     ],
     
   },

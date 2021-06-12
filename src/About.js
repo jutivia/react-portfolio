@@ -18,7 +18,7 @@ const About = () => {
 <section className= "about-container">
             <div id="about-wrapper">
                <div id="about-intro-wrapper">
-                 <h1>About</h1> 
+                 <h1>About Me</h1> 
                <p> Hey there... <br/>
             write a few stuff about myself...<br/>
         also insert resume link</p>

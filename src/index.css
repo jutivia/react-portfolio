@@ -287,8 +287,13 @@ Stripe Styles
     display: block;
     justify-self: center;
   }
-  .phone-img {
-    width: 12rem;
+  .juju-img {
+    width: 15rem;
+    border-radius:3rem;
+    /* margin-top:-1rem; */
+    box-shadow: -1px 0px 9px -1px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: -1px 0px 9px -1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -1px 0px 9px -1px rgba(0, 0, 0, 0.75);
   }
 }
 
@@ -305,8 +310,8 @@ Stripe Styles
   .hero-images {
     align-self: end;
   }
-  .phone-img {
-    width: 15rem;
+  .juju-img {
+    width:20rem;
   }
 }
 @media screen and (min-width: 1400px) {
@@ -454,31 +459,62 @@ Stripe Styles
   margin-right: 1rem;
 }
 /*Home Css*/
-
+.home-body::before{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  bottom:100%;
+ background:url(./images/coding-background-1.jpg);
+ background-size: cover;
+ background-repeat: no-repeat;
+ z-index: -1;
+  overflow-y:hidden;
+}
 .home-body{
+  position:relative;
   height:100vh;
   width:100%;
   background-color:black;
-  overflow-y:hidden;
+  opacity:0.99;
    margin:0;
+  
 }
 .home-name{
   text-align:left;
-  margin:40% 5%;
-  padding-top:20%;
+  margin:5rem;
+  padding:7% 3rem;
   padding-left:5%;
   color:white;
   margin:0;
-  
-  width:45%;
+  height:auto;
+  width:90%;
   z-index:2;
 }
-.home-name h2{
+.home-name span{
   margin-bottom:20px;
-  font-size:1.8rem;
+  font-size:0.8rem;
+  color:rgb(90, 159, 216);
 }
 .home-name h1 {
-  font-size:2.3rem;
+  font-size:3rem;
+  margin-left:4.2rem;
+ line-height:1.2;
+}
+@media (min-width: 840px){
+  .home-name{
+    margin-top:2rem;
+    padding:3% 3rem;
+  }
+  .home-name span {
+    font-size: 1rem;
+  }
+
+  .home-name h1 {
+    font-size: 3.5rem;
+  }
 }
 .frontPage{
   display:flex;
@@ -521,7 +557,7 @@ margin-top:0rem;
   text-align:center;
   padding-bottom:20px;
   margin: 0;
-  color: white;
+  color: rgb(199, 196, 196);
   font-size:14px;
   
 }
@@ -534,6 +570,19 @@ margin-top:0rem;
 }
 
 /*footer css*/
+/* .footer-container::before{
+   content: '';
+   position: absolute;
+   width: 100%;
+   height: 30%;
+   left: 0;
+   bottom:0;
+   margin:0;
+ background:url(./images/footer-transparent-skyline.jpg);
+ background-size: cover;
+ background-repeat: no-repeat;
+ z-index: -1;
+} */
 .footer-links{
   padding-bottom:1rem;
   display:flex;

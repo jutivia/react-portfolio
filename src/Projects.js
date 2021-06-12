@@ -9,8 +9,18 @@ const Projects = () => {
     return (<>
      <Navbar/>
      <Sidebar/>
+    <Submenu/>
 
-     <Submenu/>
+    <section>
+        <h1>Projects</h1>
+        
+
+
+
+
+
+    </section>
+
      <Footer/>
 </>
     )

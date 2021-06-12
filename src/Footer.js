@@ -4,7 +4,8 @@ import sublinks from './data'
 const linked= sublinks.find((item)=>{ return item.page =='Contact'})
 const Footer = () => {
     const {links}= linked;
-    return (<div className='footer-links'>
+    return (<section className='footer-container'>
+    <div className='footer-links'>
      {links.map((linker,index)=>{
          const {url, icon, label}= linker
          return(<article key={index}>
@@ -16,7 +17,7 @@ const Footer = () => {
   })
   }
 </div>
-    )
+  </section>  )
 }
 
 export default Footer

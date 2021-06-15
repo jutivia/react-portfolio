@@ -51,10 +51,11 @@ setTimeout(()=>{
     <div className='hero-center'>
     <article className='hero-info'>
   <h1 style={styles.slideInLeft}>
-   Web developer, tech enthusiast and content creator</h1>
+   Web Developer.<br/>
+   Tech Enthusiast. <br/> Programmer.</h1>
  {s2 && <p style={styles.slideInLeft}> write a little about yourself here. <br/> Think about it for later </p>}
  
- {s3 && <Link to='/About'><button className='btn' style={styles.fadeIn}>Learn More </button></Link>}
+ {s3 && <Link to='/About'><button className='btn' style={styles.fadeIn}>More About Me </button></Link>}
  
     </article>
   {s4 &&  <article className='hero-images' style={styles.fadeIn}>

@@ -5,17 +5,18 @@ const sublinks = [
   {
     page: 'About',
     links: [
-      { label:'' , icon: '', url: '' },
-      { label: '', icon: '' , url: '' },
-      { label: '', icon: '', url: '' },
+      { label:'Web Developer' , icon: '',  },
+      { label: 'Content-Creator', icon: '' ,  },
+     
     ],
   },
   {
     page: 'Projects',
     links: [
-      { label: 'React.js', icon: <FaReact />, url: '' },
-      { label: 'Plain Javascript.js', icon: <SiJavascript />, url: '' },
-       { label: 'Jquery', icon: <SiJquery/>, url: '' },
+      { label: 'React.js', icon: <FaReact />,  },
+      { label: 'Plain Javascript.js', icon: <SiJavascript />,  },
+       { label: 'Jquery', icon: <SiJquery/>,  },
+        { label: 'Css3', icon: <FaCss3/>,  },
     ],
     
   },

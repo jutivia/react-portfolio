@@ -2,15 +2,16 @@ import React, {useEffect, useState} from 'react'
 import { Link } from 'react-router-dom';
 import Typist from 'react-typist'
 
-const Home = () =>{
+const HomePage = () =>{
 const [s2, setS2] =useState(false);
 useEffect(()=>{
   setTimeout(()=>{
     setS2(true)
   },21550)
 })
-    return ( <div className='home-body'>
-      <Link to='/Home'>
+    return (<Link to='/Home'>
+         <div className='home-body'>
+      
       
         <div className='frontPage'>
          <div className='home-name' >
@@ -64,10 +65,10 @@ useEffect(()=>{
         <p >Tap anywhere to continue </p>
         </div>
         </div>}
-        
+
+         </div>
         </Link>
-    </div>
-    )
+)
 }
 
-export default Home  
+export default HomePage 

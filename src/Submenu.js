@@ -31,7 +31,7 @@ const Submenu = () => {
               {icon}
             {label}</a>
          })
-         };
+         }
             </div>
        
   </aside>

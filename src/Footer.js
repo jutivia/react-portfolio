@@ -17,6 +17,7 @@ const Footer = () => {
   })
   }
 </div>
+<p>&#169;copyright 2021</p>
   </section>  )
 }
 

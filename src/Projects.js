@@ -50,7 +50,7 @@ const Projects = () => {
         const { id, title, img, about, url } = item;
         return (
           <article key={id} className='proj-item'>
-            <img src={img} alt={title} className='photo' />
+            <img src={process.env.PUBLIC_URL + img} alt={title} className='photo' />
             <div className='item-info'>
               <header>
                 <h3>{title}</h3>
@@ -66,6 +66,8 @@ const Projects = () => {
 
 
     </section>
+    <br/>
+    <br/>
 
      <Footer/>
 </>

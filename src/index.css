@@ -638,25 +638,33 @@ margin-top:0rem;
   margin: 0;
   
 }
+#about-wrapper p{
+  width:70%;
+  margin:0 auto;
+  font-size:18px;
+}
 #about-intro-wrapper {
   margin: auto;
   text-align: center;
   color: white;
 }
 .about-works-wrapper {
+  
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-around;
   margin: 10px 20px;
 }
 .another-works-wrapper {
   display: flex;
   flex: 1;
+  max-width:1000px;
 }
 
 .works {
+  padding-top:20px;
   height: 400px;
-  width: 25%;
+  width: 40%;
   background-color: rgba(255, 255, 255, 0.849);
   margin: auto;
   box-shadow: -1px 0px 9px -1px rgba(0, 0, 0, 0.75);
@@ -686,7 +694,7 @@ margin-top:0rem;
   }
 
   .works {
-    height: 400px;
+    height: 350px;
     width: 75%;
     margin-bottom: 20px;
   }
@@ -726,7 +734,7 @@ text-align:center;
 .project-menu{
   width:90%;
   display:grid;
-  grid-template-columns:1fr 1fr;
+  grid-template-columns:1fr;
  gap:1rem;
  margin:1rem auto;
  
@@ -736,24 +744,45 @@ text-align:center;
    background-color:rgba(12, 12, 12, 0.3);
    padding:10px;
    border-radius:10px;
-  height:20rem;
+  height:22rem;
+   box-shadow: -1px 0px 9px -1px rgba(0, 0, 0, 0.75);
+   -webkit-box-shadow: -1px 0px 9px -1px rgba(0, 0, 0, 0.75);
+   -moz-box-shadow: -1px 0px 9px -1px rgba(0, 0, 0, 0.75);
 }
 .photo{
-  width:10rem;
+  width:100%;
+  height:70%;
   border-radius:10px;
+  margin:0;
+  padding:0;
 
 }
+@media (min-width: 840px){
+  .project-menu {
+    max-width:1400px;
+    width: 70%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:8%;
+  }
+}
+
+.item-info{
+  padding:5px 10px;
+}
 .more-btn{
-  padding:4px 5px;
-  color:white;
+  padding:5px 8px;
+  background:rgba(247, 243, 243, 0.747);
+  color:rgba(2, 2, 2, 0.753);
   border:none;
   font-size:14px;
   font-weight:bold;
-  background:none;
+  border-radius:10px;
   
 }
 .more-btn:hover{
-  color:rgba(12, 12, 12, 0.6);
+  color:rgba(247, 243, 243, 0.747);
+  background:rgba(2, 2, 2, 0.753);
   
 }
 .unitProj-container{
@@ -768,7 +797,8 @@ text-align:center;
   width:350px;
 }
 .unit-proj h2{
-  color:white;
+  padding:15px 0;
+  color:var(--clr-grey-1);
 
 }
 .unit-proj p{
@@ -787,6 +817,7 @@ text-align:center;
 /*contact css*/
 .contact-container{
   min-height:80vh;
+
 }
 .contact-container h1{
   margin-top:3rem;
@@ -794,6 +825,7 @@ text-align:center;
   color:white;
 }
 .contact-container p{
+  max-width:1000px;
   width:80%;
   font-size:18px;
   margin:1rem auto;
@@ -804,6 +836,7 @@ text-align:center;
   color:var(--clr-grey-6);
 }
 .myForm{
+  max-width:850px;
   width:70%;
   margin :2rem auto;
 

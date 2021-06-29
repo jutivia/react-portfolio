@@ -20,7 +20,7 @@ const UnitProj = () => {
     <Submenu/>
         <div className='unit-proj unitProj-container'>
             
-           <img src={proj.img} alt={proj.title}/> 
+           <img src={proj.img} alt={proj.title} className='unitPhoto' /> 
            <h2>{proj.title}</h2>
           <p>{proj.about}</p>
           <a href={proj.url}> visit website </a><br/>

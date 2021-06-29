@@ -26,15 +26,15 @@ const About = () => {
               
               <div className="about-works-wrapper" >
                   <div class="another-works-wrapper">
-                  <div className="works" id="web">
+                  <div className="works" id="mobile">
                     <img src={web} alt=''/>
-                      <h3 style={{padding:'5px 10px', color:'black'}}>Web Developer</h3>
-                      <p>I enjoy creating easy to use, responsive,and dynamic websites with very fast load times and lag free interactions.</p>
+                      <h3 style={{padding:'5px 10px', color:'white'}}>Web Developer</h3>
+                      <p style={{color:'white'}}>I enjoy creating easy to use, responsive,and dynamic websites with very fast load times and lag free interactions.</p>
                       </div>
-                  <div className="works" id="mobile"><br/>
+                  <div className="works" id="web"><br/>
                     <img src={content} style={{height:'20%', color:'white'}}/>
-                    <h3 style={{padding:'5px 10px', color:'white', }}>Content Creator</h3>
-                    <p style={{color:'white'}}>I enjoy creating contents that connects brands or entities to its prospective audience. it includes copywriting, designing custom UI/UX for company websites, etc.</p>
+                    <h3 style={{padding:'5px 10px', color:'black', }}>Content Creator</h3>
+                    <p >I enjoy creating contents that connects brands or entities to its prospective audience. it includes copywriting, designing custom UI/UX for company websites, etc.</p>
                   </div>
                  </div>
               </div> 
